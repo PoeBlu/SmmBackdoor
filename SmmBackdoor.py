@@ -378,7 +378,7 @@ def hexdump(data, width = 16, addr = 0):
         s += [ '  ' ] * (width - len(line))
 
         # put ASCII values
-        s = '%s | %s' % (' '.join(s), quoted(line))
+        s = f"{' '.join(s)} | {quoted(line)}"
 
         if addr is not None:
 
